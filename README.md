@@ -1,6 +1,6 @@
 # Dynamic Terrain System
 
-**A high-performance Unity terrain manipulation system using heightmap projection**
+**A high-performance Unity terrain manipulation system using runtime heightmap projection**
 
 Created by [evesfect](https://github.com/evesfect)
 
