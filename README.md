@@ -56,7 +56,7 @@ This system solves both problems by:
 
 ### Performance Notes
 - For standard and large terrains, runtime performance is excellent due to Unity's terrain LOD system
-- Extremely large maps (>4000x4000 resolution) may experience slower update times during heightmap application
+- Extremely large maps may experience slower update times during heightmap application
 - The terrain itself renders at native Unity terrain performance regardless of update frequency
 
 
@@ -132,7 +132,7 @@ Modify the `TerrainSettings` in the `DynamicTerrainManager`:
 - `minHeight` / `maxHeight` - Y-axis height range for encoding
 - `heightmapResolution` - Resolution of the heightmap (must match RenderTexture resolution)
 
-**Important:** Ensure the `_MinHeight` and `_MaxHeight` properties on the `M_HeightShader` material match your terrain settings.
+Ensure the `_MinHeight` and `_MaxHeight` properties on the `M_HeightShader` material match your terrain settings.
 
 ---
 
