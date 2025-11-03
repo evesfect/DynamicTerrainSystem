@@ -12,20 +12,25 @@ Dynamic Terrain System enables real-time terrain manipulation in Unity through m
 
 The entire terrain update process is handled through a single function call, making it ideal for both editor workflows and runtime applications.
 
+This system is inspired from the Game Developers Conference session of Giant Squid Studios, Creating the Art of ABZU https://www.youtube.com/watch?v=l9NX06mvp2E&t=937s
+
 ---
 
 ## Features
 
 - **Runtime and Editor Terrain Manipulation**
 
-- **Automatic LOD's from native Unity Terrain**
+https://github.com/user-attachments/assets/4f7a2e4b-117d-4c89-81df-c2acefdc9d6f
 
+- **Automatic LOD generation from native Unity Terrain**
+
+https://github.com/user-attachments/assets/6b676bb3-bc4b-4369-a880-9f946b3e1e86
 
 - **Flexible Terrain Sizes** - Supports almost any terrain dimensions and height ranges (adjustable via settings)
 - **Single Function Call** - `ApplyRenderTextureToTerrain()` handles the entire update process
 - **GPU-Accelerated** - Uses GPU texture copy for efficient heightmap updates
 - **Manual or Automatic** - Trigger updates manually / integrate into your own scripts
-- **No Performance Impact** - Only modifies terrain data; rendering is handled by Unity's optimized terrain system
+- **No Performance Impact** - Heightmap projection done and updated in two frames, only updates terrain data, no extra meshes.
 
 ---
 
