@@ -98,7 +98,7 @@ The `TerrainHeightmapUpdater` component:
 
 ## Setup
 
-1. You can use the DynamicTerrain prefab for ease (foun in `Assets/DynamicTerrainSystem/Prefabs`)
+1. You can use the DynamicTerrain prefab for ease (found in `Assets/DynamicTerrainSystem/Prefabs`)
 2. Attach your terrain to the Dynamic Terrain Manager script (in the prefab)
 3. You should call Update Terrain and Camera function (available in context menu)
 4. Assign M_HeightShader material to your terrain meshes
