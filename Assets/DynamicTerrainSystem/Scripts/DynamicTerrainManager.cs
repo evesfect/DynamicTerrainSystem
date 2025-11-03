@@ -30,6 +30,14 @@ public class DynamicTerrainManager : MonoBehaviour
         UpdateTerrainAndCamera();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ApplyRenderTextureToTerrain();
+        }
+    }
+
     [ContextMenu("Update Terrain and Camera")]
     public void UpdateTerrainAndCamera()
     {
