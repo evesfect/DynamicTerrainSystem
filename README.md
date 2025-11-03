@@ -14,6 +14,21 @@ The entire terrain update process is handled through a single function call, mak
 
 ---
 
+## Features
+
+- **Runtime and Editor Terrain Manipulation**
+
+- **Automatic LOD's from native Unity Terrain**
+
+
+- **Flexible Terrain Sizes** - Supports almost any terrain dimensions and height ranges (adjustable via settings)
+- **Single Function Call** - `ApplyRenderTextureToTerrain()` handles the entire update process
+- **GPU-Accelerated** - Uses GPU texture copy for efficient heightmap updates
+- **Manual or Automatic** - Trigger updates manually / integrate into your own scripts
+- **No Performance Impact** - Only modifies terrain data; rendering is handled by Unity's optimized terrain system
+
+---
+
 ## Goal
 
 Building ground terrain in Unity traditionally involves either:
@@ -34,25 +49,11 @@ This system solves both problems by:
 
 ---
 
-## Features
-
-- **Runtime and Editor Terrain Manipulation**
-
-- **Automatic LOD's from native Unity Terrain**
-
-
-- **Flexible Terrain Sizes** - Supports almost any terrain dimensions and height ranges (adjustable via settings)
-- **Single Function Call** - `ApplyRenderTextureToTerrain()` handles the entire update process
-- **GPU-Accelerated** - Uses GPU texture copy for efficient heightmap updates
-- **Manual or Automatic** - Trigger updates manually / integrate into your own scripts
-- **No Performance Impact** - Only modifies terrain data; rendering is handled by Unity's optimized terrain system
-
 ### Performance Notes
 - For standard and large terrains, runtime performance is excellent due to Unity's terrain LOD system
 - Extremely large maps (>4000x4000 resolution) may experience slower update times during heightmap application
 - The terrain itself renders at native Unity terrain performance regardless of update frequency
 
----
 
 ## Technical Implementation
 
